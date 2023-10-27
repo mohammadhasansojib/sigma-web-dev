@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This page is for learning form in html.">
+
+        <title>Html Form</title>
+        
+    </head>
+    <body>
+        <h1>Form - </h1>
+        <br>
+
+        <form action="post">
+            <label for="username">Name: </label>
+            <input type="text" id="username" name="username" placeholder="Enter username" required>
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <br><br>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+
+            <br>
+
+            <span>Favorite Bike: </span>
+            <label for="r15">R15</label>
+            <input type="checkbox" name="fav-bike" id="r15">
+            <label for="gsxr">GSXR</label>
+            <input type="checkbox" name="fav-bike" id="gsxr">
+
+            <br>
+
+            <label for="birth-date">Birth Date: </label>
+            <input type="date" id="birth-date" name="birth-date">
+
+            <br>
+
+            <label for="fav-month">Favorite month: </label>
+            <select name="fav-month" id="fav-month">
+                <option  disabled selected value="fav-month">Favorite Month</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+            </select>
+            <br>
+            <label for="color">Favorite Color: </label>
+            <input type="color" name="color" id="color">
+
+            <br><br><input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>
