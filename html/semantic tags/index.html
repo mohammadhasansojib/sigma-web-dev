@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This page is for learning about semantic tags in html.">
+
+        <title>Semantic Tags</title>
+        <style>
+            header{
+                background: tomato;
+                color: white;
+            }
+            header div{
+                background: palegreen;
+                color: black;
+            }
+            header nav{
+                background-color: blueviolet;
+            }
+            .middle-part{
+                background: palevioletred;
+                color: white;
+            }
+            .middle-part aside{
+                background-color: aqua;
+                color: black;
+            }
+            .middle-part section{
+                background-color: brown;
+            }
+            footer{
+                background: teal;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Semantic Elements</h1>
+        
+        <header>
+            <div>Logo</div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="middle-part">
+            <aside>Aside</aside>
+            <main>
+                <section class="section-1">
+                    <article>article</article>
+                    <figure>figure</figure>
+                    <p>paragraph</p>
+                </section>
+                <section class="section-2">
+                    <article>article</article>
+                    <figure>figure</figure>
+                    <p>paragraph</p>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            Footer
+        </footer>
+    </body>
+</html>
