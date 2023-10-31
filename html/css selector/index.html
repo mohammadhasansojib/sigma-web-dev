@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="this page is for learning about css selectors.">
+
+        <title>Css Selectors</title>
+        <style>
+            /*element selector*/
+            h1{
+                color: brown;
+            }
+
+            /* class selector */
+            .red{
+                color: red;
+                background-color: teal;
+            }
+
+            /* id selector */
+            #green{
+                color: green;
+                background-color: yellow;
+            }
+
+            /* child selector */
+            div > h3{
+                color: blueviolet;
+                background-color: yellowgreen;
+            }
+
+            /* decendent selector */
+            div h3{
+                color: blueviolet;
+                
+            }
+
+            /* pseudo class */
+            a:link{
+                color: green;
+            }
+            a:visited{
+                background-color: yellow;
+            }
+            a:active{
+                background-color: cadetblue;
+            }
+            a:hover{
+                background-color: crimson;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>hello world</h1>
+
+        <p class="red">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias adipisci sint aut tenetur nihil? Illum voluptatibus ipsam fugiat totam eveniet!</p>
+
+        <span id="green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, itaque veritatis. Accusantium velit eos incidunt!</span>
+
+        <div>
+            <h3>line 1</h3>
+            <h3>line 2</h3>
+            <span>
+                <h3>line 3</h3>
+            </span>
+        </div>
+
+        <a href="#">MY LINK</a>
+
+        
+    </body>
+</html>
