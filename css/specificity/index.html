@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #my-color{
+            background-color:lightcoral;
+        }
+        h1.crimson#my-color{
+            background-color: hotpink !important;
+        }
+        h1.chartreuse{
+            background-color: chartreuse !important;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="chartreuse crimson" id="my-color" style="background-color: crimson;">hello world</h1>
+</body>
+</html>
