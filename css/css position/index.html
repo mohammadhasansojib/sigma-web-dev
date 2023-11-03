@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css position</title>
+    <style>
+        .box-1{
+            width: 300px;
+            height: 300px;
+            background-color: cadetblue;
+        }
+        .box-2{
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+
+            position: absolute;
+            top: 50px;
+            right: 50px;
+
+            
+        }
+        .box-3{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+        .box-4{
+            width: 150px;
+            height: 150px;
+            background-color: blueviolet;
+
+            position: absolute;
+        }
+
+        .box-5{
+            background-color: darkblue;
+            padding: 20px;
+            color: white;
+            
+        }
+        .box-6{
+            background-color: fuchsia;
+            width: 100px;
+            height: 100px;
+
+            position: relative;
+        }
+        .first-text{
+            /* z-index works only when position property value something other than static. */
+            position: relative;
+            z-index: 2;
+        }
+
+        .box-7{
+            background-color: teal;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+
+            /* transform, filter & perspective can also make an element appear as positioned */
+
+            /* transform: translate(0); */
+            /* filter: blur(0); */
+            perspective: 0;
+
+
+        }
+        .box-8{
+            width: 100px;
+            height: 100px;
+            background-color: burlywood;
+
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <div class="box-2">
+            <div class="box-3"></div>
+        </div>
+    </div>
+
+    <div class="box-4"></div>
+
+    <p class="first-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quibusdam commodi nisi, animi neque accusantium laboriosam blanditiis? Voluptas ipsa itaque ducimus culpa beatae, aspernatur voluptates hic blanditiis temporibus, incidunt odit autem. Ullam, deleniti placeat asperiores optio corrupti ipsa? Mollitia facilis at sint eaque nemo ad itaque ut, temporibus quo quis.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam provident vel, ut praesentium, nisi incidunt quos tempore, quibusdam voluptas facilis eligendi sunt rem unde fuga quidem quasi reprehenderit nemo error aliquid. Reprehenderit ullam consectetur aut saepe excepturi esse ipsum vel, alias nisi eveniet soluta quae sapiente velit provident voluptatibus mollitia quibusdam accusamus rerum reiciendis deleniti distinctio debitis corrupti. Dolor autem ab omnis veritatis officia animi recusandae, reiciendis, commodi error consectetur harum similique labore eligendi excepturi, soluta adipisci odit.</p>
+
+    <div class="box-5">
+        Height of this box(box-5) getting from inside the box(box-6).
+        <div class="box-6"></div>
+    </div>
+
+
+    <div class="box-7">
+        <div class="box-8"></div>
+    </div>
+    
+</body>
+</html>
