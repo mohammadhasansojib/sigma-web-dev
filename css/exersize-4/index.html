@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersize 4</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        :root{
+            --header-back-color: teal;
+            --header-text-color: white;
+
+            --font-family: 'Poppins', sans-serif;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        header{
+            background-color: var(--header-back-color);
+            color: var(--header-text-color);
+            font-family: var(--font-family);
+
+            padding: 0 7%;
+
+            position: relative;
+
+            height: 70px;
+        }
+
+        .logo, nav{
+            display: inline-block;
+        }
+        .logo{
+            position: absolute;
+            top: 0;
+            left: 7%;
+        }
+        .logo h2{
+            line-height: 70px;
+            font-size: 35px;
+        }
+        nav{
+            position: absolute;
+            top: 0;
+            right: 7%;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 70px;
+        }
+        nav ul li a{
+            color: var(--header-text-color);
+            text-transform: capitalize;
+            margin: 0 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>LOGO</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
