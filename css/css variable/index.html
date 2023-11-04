@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css Variable</title>
+        <style>
+            :root{
+                --color-1: palevioletred;
+                --color-2: teal;
+            }
+            .box{
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+            }
+
+            .box-1{
+                background-color: var(--color-1);
+            }
+            .box-2{
+                background-color: var(--color-2);
+            }
+            .box-3{
+                background-color: var(--color-1);
+            }
+            .box-4{
+                background-color: var(--color-2, teal);
+            }
+            .box-5{
+                background-color: var(--color-1);
+            }
+            .box-6{
+                background-color: var(--color-2, teal);
+            }
+            .box-7{
+                background-color: var(--color-1);
+            }
+            .box-8{
+                background-color: var(--color-2);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box box-1"></div>
+        <div class="box box-2"></div>
+        <div class="box box-3"></div>
+        <div class="box box-4"></div>
+        <div class="box box-5"></div>
+        <div class="box box-6"></div>
+        <div class="box box-7"></div>
+        <div class="box box-8"></div>
+    </body>
+</html>
