@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exersize 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    </style>
+    <style>
+        :root{
+            --header-background: hotpink;
+            --dark-text-color: black;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header{
+            background-color: var(--header-background);
+            height: 70px;
+
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+        .logo{
+            float: left;
+            margin: 0 8%;
+        }
+        .logo h2{
+            font-size: 40px;
+            line-height: 70px;
+        }
+        nav{
+            float: right;
+            margin: 0 8%;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 70px;
+            margin-left: 8px;
+        }
+        nav ul li a{
+            color: var(--dark-text-color);
+            font-size: 20px;
+            padding: 5px 8px;
+            text-transform: capitalize;
+        }
+
+        .hero-sec{
+            padding: 100px 10%;
+            /* background-color: lightblue; */
+            height: 600px;
+        }
+        .hero-sec .text-sec{
+            float: left;
+            width: 45%;
+            margin-top: 5%;
+        }
+        .hero-sec .text-sec h2{
+            font-size: 45px;
+            line-height: 55px;
+            margin-bottom: 25px;
+        }
+        .hero-sec .img-sec{
+            float: right;
+            width: 45%;
+        }
+        .hero-sec .img-sec img{
+            border-radius: 15px;
+        }
+
+        .about-sec{
+            clear: both;
+            padding: 10% 80px;
+            background-color: teal;
+        }
+        .about-sec .hello-text{
+            width: 60%;
+            border: 2px solid black;
+            padding: 30px;
+            border-radius: 70px;
+            margin: auto;
+            font-size: 20px;
+        }
+
+
+
+        footer{
+            padding: 30px 10%;
+            background-color: lightcoral;
+        }
+        footer .footer-text{
+            display: inline-block;
+            margin-left: 45%;
+            font-size: 25px;
+        }
+
+        .up-button{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: crimson;
+            cursor: pointer;
+            border-radius: 50%;
+
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            padding: 17px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>LOGO</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-sec">
+            <div class="text-sec">
+                <h2>Welcome to the kingdom</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, voluptatibus dolores! Ducimus veniam nostrum asperiores officiis praesentium, quidem fuga in illum aperiam ratione id consectetur.</p>
+            </div>
+            <div class="img-sec">
+                <img src="https://c4.wallpaperflare.com/wallpaper/471/321/213/warrior-horse-painting-sky-aenami-hd-wallpaper-preview.jpg" alt="kingdom" width="100%">
+            </div>
+        </section>
+
+        <section class="about-sec">
+            <div class="hello-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas numquam ea consequatur quis necessitatibus dolore minus, labore earum beatae accusantium repellat debitis repellendus officiis aliquid illum facere totam iure tenetur deserunt nisi rem. Repudiandae provident, vitae quis assumenda officia debitis!
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-text">This is footer.</div>
+    </footer>
+
+    <div class="up-button">
+        <img src="arrow-up.png" alt="">
+    </div>
+</body>
+</html>
