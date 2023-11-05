@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css more selectors</title>
+    <style>
+        /* .box::first-line{
+            color: red;
+        } */
+
+        .boxes *{
+            border: 2px solid black;
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        /* .box:nth-child(2){
+            background-color: red
+        } */
+
+        /* .box:nth-last-child(1){
+            background-color: red;
+        } */
+
+        /* .box:nth-child(even){
+            background-color: red;
+        } */
+
+        /* .box::first-letter{
+            font-size: 45px;
+        } */
+
+        /* .boxes::before{
+            content: 'hello world';
+            background-color: lightpink;
+        }
+        .boxes::after{
+            content: 'hello world';
+            background-color: lightpink;
+        } */
+
+        /* .box[id="box"]{
+            background-color: red;
+        } */
+
+        /* ::selection{
+            background-color: lightblue;
+        }
+        .box[id="box"]::selection{
+            background-color: lightpink;
+        } */
+        
+        input::placeholder{
+            color: #444;
+            background-color: lightblue;
+        }
+        input{
+            color: crimson;
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" id="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio enim incidunt nihil consequuntur quod libero nobis, fugiat cum rem eaque.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolore cumque aliquid! Expedita architecto vero iusto totam blanditiis sequi fuga.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut id modi voluptatem? Labore nisi non dignissimos, sunt similique fugit. Suscipit!</div>
+    </div>
+
+    <input type="text" placeholder="your text">
+</body>
+</html>
