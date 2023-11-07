@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exersize 6</title>
+
+        <!-- font-awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- google font link -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        </style>
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+
+                font-family: 'Poppins', sans-serif;
+            }
+
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                padding: 15px 18%;
+                border-bottom: 2px solid black;
+            }
+            header .logo{
+                width: 190px;
+            }
+            header .logo img{
+                width: 100%;
+                cursor: pointer;
+            }
+
+            header nav{
+                display: flex;
+                align-items: center;
+            }
+            header nav ul li{
+                display: inline-block;
+                margin: 0 10px;
+
+                cursor: pointer;
+            }
+            header nav ul li .nav-text{
+                font-size: 16px;
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+            header nav ul li i{
+                font-size: 12px;
+                padding: 0 5px;
+            }
+            header nav ul:last-child li i{
+                font-size: 28px;
+                margin-top: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <i class="fa-solid fa-angle-down"></i>
+        <i class="fa-solid fa-language"></i> -->
+        
+
+        <header>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><span class="nav-text">products</span><i class="fa-solid fa-angle-down"></i></li>
+                    <li><span class="nav-text">pricing</span><i class="fa-solid fa-angle-down"></i></li>
+                    <li><span class="nav-text">resources</span><i class="fa-solid fa-angle-down"></i></li>
+                    <li><span class="nav-text">about us</span><i class="fa-solid fa-angle-down"></i></li>
+                </ul>
+                <ul>
+                    <li><i class="fa-solid fa-language"></i></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>
