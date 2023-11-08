@@ -1,0 +1,212 @@
+<!DOCTYPE  html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>css grid</title>
+        <style>
+            *{
+                font-size: 30px;
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: bolder;
+
+                box-sizing: border-box;
+            }
+            .container{
+                display: grid;
+                grid-template-rows: 200px 200px 200px;
+                grid-template-columns: repeat(4, 1fr);
+
+                gap: 10px;
+                border: 3px solid black;
+
+                height: 625px;
+
+                
+            }
+
+            .item{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+            }
+            .item-1{
+                background-color: pink;
+            }
+            .item-2{
+                background-color: brown;
+                /* grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 3;
+                grid-column-end: 4; */
+                
+                /* grid-row: 2/3;
+                grid-column: 3/4; */
+
+                /* grid-area: 2/3/3/4;
+
+                z-index: 3; */
+            }
+            .item-3{
+                background-color: lightcoral;
+
+                grid-area: 3/2/ span 1/span 2;
+            }
+            .item-4{
+                background-color: lightgreen;
+            }
+            .item-5{
+                background-color: hotpink;
+
+                grid-area: 1/2/2/3;
+            }
+            .item-6{
+                background-color: navajowhite;
+            }
+            .item-7{
+                background-color: firebrick;
+
+                grid-area: 2/1/4/2;
+            }
+            .item-8{
+                background-color: yellowgreen;
+
+                grid-area: 2/2/3/5;
+            }
+
+
+
+            .container-b{
+                border: 3px solid black;
+
+                display: grid;
+                grid-template-rows: 100px 80px 500px 70px;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+
+                grid-template-areas: 'header header header'
+                                    '. menu menu'
+                                    'sidebar content content'
+                                    'footer footer footer';
+
+
+            }
+            .item-b{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+            }
+            .item-b-1{
+                background-color: lightcoral;
+
+                grid-area: header;
+            }
+            .item-b-2{
+                background-color: tomato;
+
+                grid-area: menu;
+            }
+            .item-b-3{
+                background-color: lightblue;
+
+                grid-area: sidebar;
+            }
+            .item-b-4{
+                background-color: lightgreen;
+
+                grid-area: content;
+            }
+            .item-b-5{
+                background-color: hotpink;
+
+                grid-area: footer;
+            }
+
+
+
+
+            .container-c{
+                border: 3px solid black;
+
+                display: grid;
+                grid-template-rows: [header-start] 100px [header-end menu-start] 80px [menu-end content-start] 500px [content-end footer-start] 70px [footer-end];
+                grid-template-columns: repeat(3, [column-start] 1fr [column-end]);
+                gap: 10px;
+
+                
+
+
+            }
+            .item-c{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+            }
+            .item-c-1{
+                background-color: lightcoral;
+
+                grid-row: header-start / header-end;
+                grid-column: column-start 1 / column-end 3;
+
+            }
+            .item-c-2{
+                background-color: tomato;
+
+                grid-row: menu-start / menu-end;
+                grid-column: column-start 1 / column-end 3
+
+            }
+            .item-c-3{
+                background-color: lightblue;
+
+                grid-row: content-start / content-end;
+                grid-column: column-start 1 / column-end 1;
+
+            }
+            .item-c-4{
+                background-color: lightgreen;
+
+                grid-row: content-start / content-end;
+                grid-column: column-start 2 / column-end 3;
+
+            }
+            .item-c-5{
+                background-color: hotpink;
+
+                grid-row: footer-start / footer-end;
+                grid-column: column-start 1 / column-end 3;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item item-1">1</div>
+            <div class="item item-2">2</div>
+            <div class="item item-3">3</div>
+            <div class="item item-4">4</div>
+            <div class="item item-5">5</div>
+            <div class="item item-6">6</div>
+            <div class="item item-7">7</div>
+            <div class="item item-8">8</div>
+        </div>
+        <br><br><br>
+        <div class="container-b">
+            <div class="item-b item-b-1">HEADER</div>
+            <div class="item-b item-b-2">MENU</div>
+            <div class="item-b item-b-3">SIDEBAR</div>
+            <div class="item-b item-b-4">CONTENT</div>
+            <div class="item-b item-b-5">FOOTER</div>
+        </div>
+        <br><br><br>
+        <div class="container-c">
+            <div class="item-c item-c-1">HEADER</div>
+            <div class="item-c item-c-2">MENU</div>
+            <div class="item-c item-c-3">SIDEBAR</div>
+            <div class="item-c item-c-4">CONTENT</div>
+            <div class="item-c item-c-5">FOOTER</div>
+        </div>
+    </body>
+</html>
