@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+    <style>
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            font-weight: bolder;
+            text-transform: capitalize;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+
+            width: 75%;
+            margin: 50px auto;
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: lightgreen;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             text-align: center;
+
+            position: relative;
+
+            transition: 0.5s ease;
+        }
+        .shadow{
+            width: 150px;
+            height: 150px;
+            background-color: rgba(128, 128, 128, 0.477);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -2;
+
+            display: none;
+        }
+
+        .item-1:hover{
+            transform: rotate(0.125turn);
+        }
+        .item-2:hover{
+            transform: rotateX(60deg);
+        }
+        .item-3:hover{
+            transform: rotateY(60deg);
+        }
+        .item-4:hover{
+            transform: scale(0.8);
+        }
+        .item-5:hover{
+            transform: scaleX(0.7);
+        }
+        .item-6:hover{
+            transform: scaleY(0.7);
+        }
+        .item-7:hover{
+            transform: skew(22.5deg);
+        }
+        .item-8:hover{
+            transform: skewX(22.5deg);
+        }
+        .item-9:hover{
+            transform: skewY(22.5deg);
+        }
+        .item-10:hover{
+            transform: translate(20%);
+        }
+        .item-11:hover{
+            transform: translateX(20%);
+        }
+        .item-12:hover{
+            transform: translateY(20%);
+        }
+        .item-13:hover{
+            transform-origin: 50% 0;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1"><div class="shadow"></div>rotate</div>
+        <div class="item item-2"><div class="shadow"></div>rotateX</div>
+        <div class="item item-3"><div class="shadow"></div>rotateY</div>
+        <div class="item item-4"><div class="shadow"></div>scale</div>
+        <div class="item item-5"><div class="shadow"></div>scaleX</div>
+        <div class="item item-6"><div class="shadow"></div>scaleY</div>
+        <div class="item item-7"><div class="shadow"></div>skew</div>
+        <div class="item item-8"><div class="shadow"></div>skewX</div>
+        <div class="item item-9"><div class="shadow"></div>skewY</div>
+        <div class="item item-10"><div class="shadow"></div>translate</div>
+        <div class="item item-11"><div class="shadow"></div>translate-X</div>
+        <div class="item item-12"><div class="shadow"></div>translate-Y</div>
+        <div class="item item-13"><div class="shadow"></div>transform origin</div>
+    </div>
+</body>
+</html>
