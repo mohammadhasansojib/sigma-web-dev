@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exersize 7</title>
+    <!-- google font link -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    </style>
+    <style>
+        *{
+            font-family: 'Poppins', sans-serif;
+
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 310px 310px 310px;
+            /* grid-template-rows: repeat(5, auto); */
+            gap: 20px 25px;
+
+            max-width: max-content;
+            padding: 20px;
+            margin: auto;
+        }
+        .item{
+            background-color: #f9f9f9;
+            padding: 20px 15px;
+            
+        }
+        .item .h3{
+            text-align: center;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .item span{
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+        .item .btns{
+            width: max-content;
+            margin: auto;
+        }
+        .item .btns button{
+            font-size: 12px;
+            font-weight: 600;
+            border: none;
+            color: white;
+            padding: 8px 10px;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+            
+        }
+        .item .btns .btn1{
+            background-color: #00b6d1;
+        }
+        .item .btns .btn2{
+            background-color: #5cb85c;
+        }
+
+
+
+
+
+
+        @media only screen and (max-width: 1140px){
+            .container{
+            display: grid;
+            grid-template-columns: 280px 280px 280px;
+            /* grid-template-rows: repeat(5, auto); */
+            gap: 20px 25px;
+
+            max-width: max-content;
+            padding: 20px;
+            margin: auto;
+            }
+            .item .btns button{
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width: 980px){
+            .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            /* grid-template-rows: repeat(5, auto); */
+            gap: 20px 25px;
+
+            max-width: 100%;
+            padding: 20px;
+            margin: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">
+            <div class="h3">English</div>
+            <span></span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-2">
+            <div class="h3">Deutsch</div>
+            <span>German</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-3">
+            <div class="h3">Italiano</div>
+            <span>Italian</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-4">
+            <div class="h3">Español</div>
+            <span>Spanish</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-5">
+            <div class="h3">français</div>
+            <span>French</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-6">
+            <div class="h3">Português brasileiro</div>
+            <span>Brazilian Portuguese</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-7">
+            <div class="h3">日本</div>
+            <span>Japanese</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-8">
+            <div class="h3">한국어</div>
+            <span>Korean</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-9">
+            <div class="h3">中国</div>
+            <span>Chinese</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+            </div>
+        </div>
+        <div class="item item-10">
+            <div class="h3">中國</div>
+            <span>Traditional Chinese</span>
+            <div class="btns">
+                <button class="btn1">Download 32-bit</button>
+                <button class="btn2">Download 64-bit</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
