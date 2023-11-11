@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css transition</title>
+        <style>
+            .container{
+                width: 200px;
+                height: 200px;
+                background-color: palevioletred;
+                margin: 20vh auto;
+
+                /* transition-property: transform,width,height;
+                transition-timing-function: ease-in-out;
+                transition-duration: 1s,1s,1s;
+                transition-delay: 0.4s; */
+
+                transition: transform,width,height 1s,1s,1s ease-in-out 0.5s;
+
+                transform-origin: 0 0;
+
+                
+                
+            }
+            .box{
+                width: 50px;
+                height: 30px;
+                background-color: lightgreen;
+
+                
+            }
+            .transform:hover{
+                transform: rotate(45deg);
+                
+                width: 300px;
+                height: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container transform">
+            <!-- <div class="box transform"></div> -->
+        </div>
+    </body>
+</html>
