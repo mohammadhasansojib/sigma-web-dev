@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>exersize 8</title>
+
+        <style>
+            body{
+                background-color: black;
+                color: white;
+            }
+            .container{
+                background-color: darkslategrey;
+                width: 200px;
+                height: 200px;
+
+                position: relative;
+            }
+            .circle{
+                width: 100px;
+                height: 100px;
+                background-color: hotpink;
+                border-radius: 50%;
+
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                animation: myanim 2s ease infinite forwards alternate-reverse;
+            }
+
+            @keyframes myanim{
+                0%{
+                    transform: translate(0px,0px);
+                }5%{
+                    transform: translate(5px,-5px);
+                }10%{
+                    transform: translate(10px,-10px);
+                }15%{
+                    transform: translate(15px,-15px);
+                }20%{
+                    transform: translate(20px,-20px);
+                }25%{
+                    transform: translate(25px,-25px);
+                }30%{
+                    transform: translate(30px,-30px);
+                }35%{
+                    transform: translate(35px,-35px);
+                }40%{
+                    transform: translate(40px,-40px);
+                }45%{
+                    transform: translate(45px,-45px);
+                }50%{
+                    transform: translate(50px,-50px);
+                }55%{
+                    transform: translate(55px,-45px);
+                }60%{
+                    transform: translate(60px,-40px);
+                }65%{
+                    transform: translate(65px,-35px);
+                }70%{
+                    transform: translate(70px,-30px);
+                }75%{
+                    transform: translate(75px,-25px);
+                }80%{
+                    transform: translate(80px,-20px);
+                }85%{
+                    transform: translate(85px,-15px);
+                }90%{
+                    transform: translate(90px,-10px);
+                }95%{
+                    transform: translate(95px,-5px);
+                }100%{
+                    transform: translate(100px,0px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="circle"></div>
+        </div>
+    </body>
+</html>
